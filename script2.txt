@@ -1,0 +1,28 @@
+mkdir App
+mkdir Courses
+mkdir Code
+cd Courses
+mkdir CSci41
+mkdir CSci250
+cd CSci41
+create roster.txt 30
+create grade.txt 40
+create exam.txt 50
+resize exam.txt 100
+del grade.txt
+ls grade.txt
+cd ..
+cd CSci250
+create project1.txt 20
+create project2.txt 40
+create quiz1.txt 30
+size quiz1.txt
+resize project2.txt 60 
+cd ..
+size CSci41
+size CSci250
+ls CSci41
+del CSci41
+cd ..
+size Courses
+exit

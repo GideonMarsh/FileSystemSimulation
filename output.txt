@@ -1,0 +1,108 @@
+
+root> mkdir App
+Subdirectory "App" created
+
+root> mkdir Courses
+Subdirectory "Courses" created
+
+root> mkdir Code
+Subdirectory "Code" created
+
+root> cd Courses
+Directory changed to Courses
+
+Courses> mkdir CSci41
+Subdirectory "CSci41" created
+
+Courses> mkdir CSci250
+Subdirectory "CSci250" created
+
+Courses> cd CSci41
+Directory changed to CSci41
+
+CSci41> create roster.txt 30
+File "roster.txt" created
+
+CSci41> create grade.txt 40
+File "grade.txt" created
+
+CSci41> create exam.txt 50
+File "exam.txt" created
+
+CSci41> resize exam.txt 100
+This is the new file tree structure
+root 170
+   App 0
+   Courses 170
+      CSci41 170
+         roster.txt 30
+         grade.txt 40
+         exam.txt 100
+      CSci250 0
+   Code 0
+File was resized successfully
+Size of exam.txt set to 100
+
+CSci41> del grade.txt
+grade.txt deleted
+
+CSci41> ls grade.txt
+grade.txt is not a valid file or directory
+
+CSci41> cd ..
+Directory changed to Courses
+
+Courses> cd CSci250
+Directory changed to CSci250
+
+CSci250> create project1.txt 20
+File "project1.txt" created
+
+CSci250> create project2.txt 40
+File "project2.txt" created
+
+CSci250> create quiz1.txt 30
+File "quiz1.txt" created
+
+CSci250> size quiz1.txt
+30
+
+CSci250> resize project2.txt 60 
+This is the new file tree structure
+root 240
+   App 0
+   Courses 240
+      CSci41 130
+         roster.txt 30
+         exam.txt 100
+      CSci250 110
+         project1.txt 20
+         project2.txt 60
+         quiz1.txt 30
+   Code 0
+File was resized successfully
+Size of project2.txt set to 60
+
+CSci250> cd ..
+Directory changed to Courses
+
+Courses> size CSci41
+130
+
+Courses> size CSci250
+110
+
+Courses> ls CSci41
+roster.txt 30
+exam.txt 100
+
+Courses> del CSci41
+CSci41 deleted
+
+Courses> cd ..
+Directory changed to root
+
+root> size Courses
+110
+
+root> exit
