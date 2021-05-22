@@ -28,3 +28,6 @@ Allows for the display of a tree structure to add arbitrary display elements wit
 
 Adapter pattern; used in DirectoryTreeDisplay.java and FileSystem.java
 Allows for a class that isn't designed to work with another class to be compatible. The TextTreeDisplay class is designed to work with its internal TreeNode class, and is incompatible with our file system. DirectoryTreeDisplay.java serves as the adapter for FileSystem.java (the adaptee) so that TextTreeDisplay can display the file system using its preexisting methods. 
+
+#### Created for an Advanced Software Engineering course. Received commendation and high marks from professor.
+"I haven't seen such an outstanding and clean source code for a long while. Great job!" - Dr. Shih-Hsi Liu, CSU Fresno Computer Science Department
